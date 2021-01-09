@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { BottomNavigation, Text } from 'react-native-paper';
+import { BottomNavigation, Text, View } from 'react-native-paper';
+import CreateModal from './CreateModal';
 
-const ItemsRoute = () => <Text>Music</Text>;
+const ItemsRoute = () => <CreateModal></CreateModal>;
 
 const FavsRoute = () => <Text>Albums</Text>;
 
