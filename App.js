@@ -3,15 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import Navbar from './Navbar';
+import BottomNav from './BottomNav';
 
 export default function App() {
   return (
     <PaperProvider>
       <Navbar></Navbar>
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <BottomNav></BottomNav>
     </PaperProvider>
   );
 }

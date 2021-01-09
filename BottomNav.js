@@ -1,24 +1,24 @@
 import * as React from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
 
-const MusicRoute = () => <Text>Music</Text>;
+const ItemsRoute = () => <Text>Music</Text>;
 
-const AlbumsRoute = () => <Text>Albums</Text>;
+const FavsRoute = () => <Text>Albums</Text>;
 
-const RecentsRoute = () => <Text>Recents</Text>;
+const SettingsRoute = () => <Text>Recents</Text>;
 
 const BottomNav = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'music', title: 'Music', icon: 'queue-music' },
-    { key: 'albums', title: 'Albums', icon: 'album' },
-    { key: 'recents', title: 'Recents', icon: 'history' },
+    { key: 'items', title: 'Items', icon: 'clipboard' },
+    { key: 'favorites', title: 'Favorites', icon: 'heart' },
+    { key: 'settings', title: 'Settings', icon: 'gear' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
-    music: MusicRoute,
-    albums: AlbumsRoute,
-    recents: RecentsRoute,
+    items: ItemsRoute,
+    favorites: FavsRoute,
+    settings: SettingsRoute,
   });
 
   return (
