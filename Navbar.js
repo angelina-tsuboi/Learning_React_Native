@@ -6,8 +6,7 @@ const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 
 const Navbar = () => (
     <Appbar.Header>
-       <Appbar.Content title="Title" subtitle={'Subtitle'} />
-        <Appbar.Action icon="magnify" onPress={() => {}} />
+       <Appbar.Content title="Todo List" subtitle={'Welcome to the app!'} />
         <Appbar.Action icon={MORE_ICON} onPress={() => {}} />
     </Appbar.Header>
 );

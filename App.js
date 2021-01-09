@@ -7,8 +7,8 @@ import Navbar from './Navbar';
 export default function App() {
   return (
     <PaperProvider>
-    <View style={styles.container}>
       <Navbar></Navbar>
+    <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
